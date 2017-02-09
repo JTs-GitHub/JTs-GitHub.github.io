@@ -1,3 +1,38 @@
 h1 {
   color: blue;
+  border-bottom: thick solid gray;
+  font-family: "Comic Sans MS";
 }
+
+h2+p {
+  margin: 20px;
+  color: red;
+}
+
+body {
+  padding 20px
+}
+
+h2 {
+  background-image: url("images/wov.png");
+  background-color: #cccccc;
+}
+
+.choices-highlighted {
+  background-color: gray;
+  color: gold;
+}
+
+img, form {
+    display: block;
+    margin: auto;
+    padding: 15px;
+    width: 40%;
+}
+
+#square-is-bad {
+  border-radius: 35px;
+}
+
+/* "different color for visited links is the default, so no CSS rule was added*/
+
