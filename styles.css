@@ -1,28 +1,40 @@
+
+/* border added to at least one element */
 h1 {
   color: blue;
   border-bottom: thick solid gray;
   font-family: "Comic Sans MS";
 }
 
+/* margin added to at least one element */
 h2+p {
   margin: 20px;
   color: red;
 }
 
+/* padding every element in the body */
 body {
-  padding 20px
+  padding: 20px;
 }
 
+/* adding background image style to h2 */
 h2 {
   background-image: url("images/wov.png");
   background-color: #cccccc;
 }
 
-.choices-highlighted {
+/* using class to style a new background color and text color  */
+.multiple-choice {
   background-color: gray;
   color: gold;
 }
 
+/* using styles to limit size of element, and keep it left*/
+.bias-left {
+  width: 600px;
+}
+
+/* centering images and forms */
 img, form {
     display: block;
     margin: auto;
@@ -30,9 +42,21 @@ img, form {
     width: 40%;
 }
 
+/* styling the image with rounded corners */
 #square-is-bad {
   border-radius: 35px;
 }
 
-/* "different color for visited links is the default, so no CSS rule was added*/
+/* hyperlinks will be changed from default color to pink once they have been visited */
+a:visited {
+  color: pink;
+}
 
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+}
